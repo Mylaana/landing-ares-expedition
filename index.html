@@ -10,6 +10,14 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 0.8s ease-out both;
+    }
   </style>
 </head>
 <body class="bg-gradient-to-b from-white to-orange-50 text-gray-800">
@@ -17,15 +25,17 @@
     <header class="text-center mb-20 mt-20">
       <h1 class="text-6xl font-extrabold text-orange-500 mb-10">Ares Expedition</h1>
       <p class="text-xl text-gray-700">Une web app pour jouer à <span class="italic">Terraforming Mars - Ares Expedition</span>, jusqu'à 6 joueurs en ligne.</p>
-      <a href="https://github.com/Mylaana/aresexpedition" target="_blank" class="inline-block mt-10 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow hover:bg-orange-600">Voir le code sur GitHub</a>
+      <div class="flex justify-center">
+        <a href="https://github.com/Mylaana/aresexpedition" target="_blank" class="inline-block mt-10 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow hover:bg-orange-600">Voir le code sur GitHub</a>
+      </div>
     </header>
 
-    <section class="mb-20">
+    <section class="mb-20 animate-fadeIn">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Bienvenue sur Mars</h2>
-      <div class="bg-gray-200 rounded-lg flex items-center justify-center"><img class="shadow-md rounded-xl shadow-gray-500" src="images/fullscreen_lobby.png"></div>
+      <div class="bg-gray-200 rounded-lg flex items-center justify-center"><img class="shadow-md rounded-xl shadow-gray-500" src="images/fullscreen_lobby.png" alt="Capture d'écran de la page d'accueil du jeu"></div>
     </section>
 
-    <section class="mb-20">
+    <section class="mb-20 animate-fadeIn">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Pourquoi ce projet</h2>
       <p class="text-gray-600 text-xl">Passionné de nouvelles technologies et suite à ma reconversion en développeur backend, je me suis lancé le défi de développer une application de A à Z.</p>
       <p class="text-gray-600 text-xl mt-4">L'Objectif: Apprendre un langage/framework front-end de zéro, pour répondre aux besoins du marché et compléter mes connaissances. Etant déja geek à la base, pourquoi ne pas développer un jeu ?!</p>
@@ -33,33 +43,33 @@
       <p class="text-gray-600 text-xl mt-4">Vous l'aurez compris, si c'est compliqué, c'est encore trop simple !</p>
     </section>
 
-    <section class="mb-20">
-      <h2 class="text-3xl font-bold mb-6 text-orange-700">Fonctionnalités principales</h2>
+    <section class="mb-20 animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">Les Fonctionnalités principales</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Stack moderne</h3>
           <p class="text-gray-600">Frontend Angular 17.</p>
           <p class="text-gray-600">Backend Java 23, SpringBoot.</p>
           <p class="text-gray-600">Api REST + Websocket.</p>
         </div>
-        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">En temps réel et asynchrone</h3>
           <p class="text-gray-600">Connexions multijoueurs et communication client-serveur via Stomp Websocket.</p>
         </div>
-        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Synchronisation d'état</h3>
           <p class="text-gray-600">Gestion de l’état de jeu de tous les joueurs par le serveur centralisé.</p>
         </div>
-        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Architecture et Design patterns</h3>
           <p class="text-gray-600">SOLID, MVC, architecture modulaire.</p>
           <p class="text-gray-600">Event Driven Architecture.</p>
         </div>
-        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">DevOps</h3>
           <p class="text-gray-600">CI/CD via Github Actions et AWS Cloud. Tests automatisés du code via pipeline.</p>
         </div>
-        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Optimisation et scalabilité</h3>
           <p class="text-gray-600">Optimisation des flux de donnés et calculs côté serveur.</p>
           <p class="text-gray-600">Visuels générés à 99% en CSS/SCSS (très peu d'images).</p>
@@ -67,19 +77,29 @@
       </div>
     </section>
 
-    <section class="mb-20">
-      <h2 class="text-3xl font-bold mb-6 text-orange-700">Aperçu du gameplay</h2>
+    <section class="mb-20 animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">Le gameplay en image</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_planification.png"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_development.png"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_construction.png"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_research.png"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_cards.png"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_planification.png" alt="Capture d'écran de la planification des phases de jeu"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_development.png" alt="Capture d'écran de la phasse de développement"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_construction.png"alt="Capture d'écran de la phase de construction"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_research.png"alt="Capture d'écran de la phasse de recherche"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_cards.png"alt="Capture d'écran de la liste des cartes"></div>
+      </div>
+    </section>
+    
+    <section class="mb-20 animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">En quelques chiffres</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div><p class="text-4xl font-extrabold text-orange-500">10K+</p><p class="text-gray-600">Lignes de code</p></div>
+        <div><p class="text-4xl font-extrabold text-orange-500">2</p><p class="text-gray-600">Frameworks appris</p></div>
+        <div><p class="text-4xl font-extrabold text-orange-500">100%</p><p class="text-gray-600">Auto-formation</p></div>
+        <div><p class="text-4xl font-extrabold text-orange-500">Trop</p><p class="text-gray-600">Cafés consommés</p></div>
       </div>
     </section>
 
-    <section class="mb-20">
-      <h2 class="text-3xl font-bold mb-6 text-orange-700">Stack technique</h2>
+    <section class="mb-20 animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">La Stack</h2>
       <ul>
         <li class="italic text-gray-700">Frontend: Angular 17, Typescript, RXJS, RX-Stomp</li>
         <li class="italic text-gray-700">Backend: Java 23, Spring Boot, Websocket Stomp, API REST</li>
