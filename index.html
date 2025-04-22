@@ -6,6 +6,7 @@
   <title>Ares Expedition</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -40,7 +41,7 @@
       <p class="text-gray-600 text-xl">Passionné de nouvelles technologies et suite à ma reconversion en développeur backend, je me suis lancé le défi de développer une application de A à Z.</p>
       <p class="text-gray-600 text-xl mt-4">L'Objectif: Apprendre un langage/framework front-end de zéro, pour répondre aux besoins du marché et compléter mes connaissances. Etant déja geek à la base, pourquoi ne pas développer un jeu ?!</p>
       <p class="text-gray-600 text-xl mt-4">C'est ainsi que mi 2024 je suis monté dans la fusée vers mars, et comme apprendre Angular en autodidacte n'était visiblement pas encore assez compliqué, pourquoi ne pas ajouter Java, SpringBoot, deux APIs, du temps réel, du DevOps, des tests automatisés, gérer tous mes visuels en SCSS, optimiser la conso de bande passante, la scalabilité, la sécurité etc...</p>
-      <p class="text-gray-600 text-xl mt-4">Vous l'aurez compris, si c'est compliqué, c'est encore trop simple !</p>
+      <p class="text-gray-600 text-xl mt-4">Vous l'aurez compris, si c'est compliqué, c'est encore trop simple <span class="font-bold">¯\_(ツ)_/¯</span></p>
     </section>
 
     <section class="mb-20 animate-fadeIn">
@@ -71,23 +72,35 @@
         </div>
         <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Optimisation et scalabilité</h3>
-          <p class="text-gray-600">Optimisation des flux de donnés et calculs côté serveur.</p>
+          <p class="text-gray-600">Optimisation des flux de données et calculs côté serveur.</p>
           <p class="text-gray-600">Visuels générés à 99% en CSS/SCSS (très peu d'images).</p>
         </div>
       </div>
+    </section>
+    
+    <section class="mb-20 animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">Étapes de développement</h2>
+      <ul class="list-disc ml-6 text-gray-700 space-y-2">
+        <li>✔️ Mai 2024 : Début du projet</li>
+        <li>✔️ Juillet - Octobre : Front + logique de jeu</li>
+        <li>✔️ Novembre - Janvier 2025 : Backend, temps réel & synchronisation</li>
+        <li>✔️ Février - Mai : Features manquantes, API pour création de partie, ajout des cartes au kilomètre</li>
+        <li>🚀 Juin : Mise en ligne, déploiement AWS</li>
+        <li>🚀 To be continued : Ajout d'extensions, contenu fanmade</li>
+      </ul>
     </section>
 
     <section class="mb-20 animate-fadeIn">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Le gameplay en image</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_planification.png" alt="Capture d'écran de la planification des phases de jeu"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_development.png" alt="Capture d'écran de la phasse de développement"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_development.png" alt="Capture d'écran de la phase de développement"></div>
         <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_construction.png"alt="Capture d'écran de la phase de construction"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_research.png"alt="Capture d'écran de la phasse de recherche"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_research.png"alt="Capture d'écran de la phase de recherche"></div>
         <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_cards.png"alt="Capture d'écran de la liste des cartes"></div>
       </div>
     </section>
-    
+
     <section class="mb-20 animate-fadeIn">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">En quelques chiffres</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -100,7 +113,7 @@
 
     <section class="mb-20 animate-fadeIn">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">La Stack</h2>
-      <ul>
+      <ul class="list-disc ml-6 text-gray-700 space-y-2">
         <li class="italic text-gray-700">Frontend: Angular 17, Typescript, RXJS, RX-Stomp</li>
         <li class="italic text-gray-700">Backend: Java 23, Spring Boot, Websocket Stomp, API REST</li>
         <li class="italic text-gray-700">DevOps: Github Actions, AWS, Pipeline CI/CD</li>
