@@ -15,19 +15,19 @@
 <body class="bg-gradient-to-b from-white to-orange-50 text-gray-800">
   <div class="max-w-6xl mx-auto px-4 py-12">
     <header class="text-center mb-20 mt-20">
-      <h1 class="text-6xl font-extrabold text-orange-600 mb-10">Ares Expedition</h1>
+      <h1 class="text-6xl font-extrabold text-orange-500 mb-10">Ares Expedition</h1>
       <p class="text-xl text-gray-700">Une web app pour jouer à <span class="italic">Terraforming Mars - Ares Expedition</span>, jusqu'à 6 joueurs en ligne.</p>
       <a href="https://github.com/Mylaana/aresexpedition" target="_blank" class="inline-block mt-10 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow hover:bg-orange-600">Voir le code sur GitHub</a>
     </header>
 
     <section class="mb-20">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Bienvenue sur Mars</h2>
-      <div class="bg-gray-200 rounded-lg flex items-center justify-center shadow rounded-lg"><img  class="shadow rounded-xl" src="images/fullscreen_lobby.png"></div>
+      <div class="bg-gray-200 rounded-lg flex items-center justify-center"><img class="shadow-md rounded-xl shadow-gray-500" src="images/fullscreen_lobby.png"></div>
     </section>
 
     <section class="mb-20">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Pourquoi ce projet</h2>
-      <p class="text-gray-600 text-xl">Passionné de nouvelles technologies et suite à ma formation de développeur backend afin de me reconvertir, je me suis lancé le défi de développer une application de A à Z.</p>
+      <p class="text-gray-600 text-xl">Passionné de nouvelles technologies et suite à ma reconversion en développeur backend, je me suis lancé le défi de développer une application de A à Z.</p>
       <p class="text-gray-600 text-xl mt-4">L'Objectif: Apprendre un langage/framework front-end de zéro, pour répondre aux besoins du marché et compléter mes connaissances. Etant déja geek à la base, pourquoi ne pas développer un jeu ?!</p>
       <p class="text-gray-600 text-xl mt-4">C'est ainsi que mi 2024 je suis monté dans la fusée vers mars, et comme apprendre Angular en autodidacte n'était visiblement pas encore assez compliqué, pourquoi ne pas ajouter Java, SpringBoot, deux APIs, du temps réel, du DevOps, des tests automatisés, gérer tous mes visuels en SCSS, optimiser la conso de bande passante, la scalabilité, la sécurité etc...</p>
       <p class="text-gray-600 text-xl mt-4">Vous l'aurez compris, si c'est compliqué, c'est encore trop simple !</p>
@@ -37,26 +37,32 @@
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Fonctionnalités principales</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Architecture moderne</h3>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Stack moderne</h3>
           <p class="text-gray-600">Frontend Angular 17.</p>
           <p class="text-gray-600">Backend Java 23, SpringBoot.</p>
           <p class="text-gray-600">Api REST + Websocket.</p>
         </div>
         <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Multijoueur en temps réel</h3>
-          <p class="text-gray-600">Gestion temps réelle des connexions, communication client-serveur via Stomp Websocket.</p>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">En temps réel et asynchrone</h3>
+          <p class="text-gray-600">Connexions multijoueurs et communication client-serveur via Stomp Websocket.</p>
         </div>
         <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Synchronisation d'état</h3>
-          <p class="text-gray-600">Un serveur centralisé gère et synchronise l’état du jeu pour tous les joueurs.</p>
+          <p class="text-gray-600">Gestion de l’état de jeu de tous les joueurs par le serveur centralisé.</p>
         </div>
         <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Respect des bonnes pratiques</h3>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Architecture et Design patterns</h3>
           <p class="text-gray-600">SOLID, MVC, architecture modulaire.</p>
+          <p class="text-gray-600">Event Driven Architecture.</p>
         </div>
         <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">DevOps</h3>
           <p class="text-gray-600">CI/CD via Github Actions et AWS Cloud. Tests automatisés du code via pipeline.</p>
+        </div>
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Optimisation et scalabilité</h3>
+          <p class="text-gray-600">Optimisation des flux de donnés et calculs côté serveur.</p>
+          <p class="text-gray-600">Visuels générés à 99% en CSS/SCSS (très peu d'images).</p>
         </div>
       </div>
     </section>
@@ -64,16 +70,22 @@
     <section class="mb-20">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Aperçu du gameplay</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center shadow"><img class="rounded-xl shadow" src="images/fullscreen_planification.png"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center shadow"><img class="rounded-xl shadow" src="images/fullscreen_development.png"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center shadow"><img class="rounded-xl shadow" src="images/fullscreen_construction.png"></div>
-        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center shadow"><img class="rounded-xl shadow" src="images/fullscreen_research.png"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_planification.png"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_development.png"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_construction.png"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_research.png"></div>
+        <div class="h-30 bg-gray-200 rounded-lg flex items-center justify-center"><img class="rounded-xl shadow-gray-500 shadow-md" src="images/fullscreen_cards.png"></div>
       </div>
     </section>
 
     <section class="mb-20">
       <h2 class="text-3xl font-bold mb-6 text-orange-700">Stack technique</h2>
-      <p class="italic text-gray-700 text-center">Angular · TypeScript · Java · Spring Boot · WebSocket · STOMP · AWS</p>
+      <ul>
+        <li class="italic text-gray-700">Frontend: Angular 17, Typescript, RXJS, RX-Stomp</li>
+        <li class="italic text-gray-700">Backend: Java 23, Spring Boot, Websocket Stomp, API REST</li>
+        <li class="italic text-gray-700">DevOps: Github Actions, AWS, Pipeline CI/CD</li>
+        <li class="italic text-gray-700">Tests automatisés: Jasmine + Karma, JUnit</li>
+      </ul>
     </section>
 
     <footer class="text-center text-sm text-gray-500 mt-20">
