@@ -1,116 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nom de ton App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ares Expedition</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-    }
-    header, section, footer {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 3rem 1rem;
-    }
-    h1, h2, h3 {
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 3rem;
-      text-align: center;
-    }
-    p {
-      font-size: 1.2rem;
-      text-align: center;
-    }
-    .screenshot {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 2rem auto;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-    .tech-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-    .tech-item {
-      background: #fff;
-      padding: 0.75rem 1.25rem;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body>
+<body class="bg-gradient-to-b from-white to-orange-50 text-gray-800">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <header class="text-center mb-20">
+      <h1 class="text-6xl font-extrabold text-orange-600">Projet Ares Expedition</h1>
+      <p class="mt-4 text-xl text-gray-700">Une web app pour jouer au jeu de société Terraforming Mars - Ares Expedition, jusqu'à 6 joueurs en ligne.</p>
+      <br>
+      <a href="https://github.com/ton-compte/ton-repo" target="_blank" class="inline-block mt-6 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow hover:bg-orange-600">Voir le code sur GitHub</a>
+    </header>
 
-  <header>
-    <h1>Nom de ton App</h1>
-    <p>Un jeu web multijoueur en temps réel, développé de A à Z en Angular & Java</p>
-  </header>
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">Un aperçu de l'application</h2>
+      <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-lg shadow-inner">![image](https://github.com/Mylaana/landing-ares-expedition/blob/main/fullscreen_cards.png)</div>
+    </section>
 
-  <section>
-    <h2>🎮 Présentation</h2>
-    <p>Cette application est un jeu de stratégie jouable à 2-6 joueurs. Le front est en Angular, le back en Java Spring Boot, avec synchronisation via WebSocket.</p>
-    <img src="screenshot.jpg" alt="Capture d'écran de l'application" class="screenshot">
-  </section>
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">Fonctionnalités principales</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Multijoueur en temps réel</h3>
+          <p class="text-gray-600">Les joueurs se connectent et interagissent via WebSocket pour un gameplay fluide.</p>
+        </div>
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Architecture modulaire</h3>
+          <p class="text-gray-600">Découpage clair avec Angular, Spring Boot et gestion fine des WebSockets.</p>
+        </div>
+        <div class="bg-white border-l-4 border-orange-400 p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Synchronisation d'état</h3>
+          <p class="text-gray-600">Un serveur centralisé gère et synchronise l’état du jeu pour tous les joueurs.</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>🧰 Stack technique</h2>
-    <div class="tech-list">
-      <div class="tech-item">Angular 17</div>
-      <div class="tech-item">Java Spring Boot</div>
-      <div class="tech-item">WebSocket + STOMP</div>
-      <div class="tech-item">AWS EC2</div>
-      <div class="tech-item">HTML/CSS</div>
-    </div>
-  </section>
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">Aperçu du gameplay</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-lg shadow-inner">[Capture d'une partie]</div>
+        <div class="h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-lg shadow-inner">[Capture de cartes]</div>
+      </div>
+    </section>
 
-  <section>
-    <h2>💡 Ce que j’ai réalisé</h2>
-    <ul>
-      <li>Architecture front/back propre et modulaire</li>
-      <li>Gestion multi-joueurs avec canaux WebSocket dédiés</li>
-      <li>Optimisation des messages pour limiter la bande passante</li>
-      <li>Refactor complet du front Angular</li>
-      <li>Déploiement sur serveur EC2</li>
-    </ul>
-  </section>
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-6 text-orange-700">Stack technique</h2>
+      <p class="italic text-gray-700 text-center">Angular · TypeScript · Java · Spring Boot · WebSocket · STOMP · AWS EC2</p>
+    </section>
 
-  <section>
-    <h2>🔗 Liens utiles</h2>
-    <p><a href="https://github.com/ton-utilisateur/ton-repo" target="_blank">Voir le code sur GitHub</a></p>
-    <p><a href="mailto:ton.email@example.com">Me contacter</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Ton Nom — Landing page projet perso</p>
-  </footer>
-
+    <footer class="text-center text-sm text-gray-500 mt-20">
+      &copy; 2025 · Ton Nom · <a href="https://github.com/ton-compte" target="_blank" class="text-orange-600 hover:underline">GitHub</a>
+    </footer>
+  </div>
 </body>
 </html>
